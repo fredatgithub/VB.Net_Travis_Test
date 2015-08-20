@@ -1,7 +1,6 @@
 language: csharp
 solution: WindowsApplicationTravisDemo.sln
 script:
- - xbuild /p:Configuration=Release WindowsApplicationTravisDemo/WindowsApplicationTravisDemo.vbproj
-  #LC_CTYPE=fr_FR.UTF-8 xbuild /property:Configuration=Release Chronometre.sln
+ xbuild /p:VbcToolExe=vbnc.exe WindowsApplicationTravisDemo.sln
 notifications:
   email: false
